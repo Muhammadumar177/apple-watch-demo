@@ -34,6 +34,12 @@ img{
 
 
 }
+*:focus{
+
+  outline: 2pxs olid #333;
+ outline-offset: 3px ;
+  transition: all 0.1s ease;
+}
 
 .container{
   width: 100%;
@@ -58,8 +64,7 @@ padding-bottom: 30px;
   display: flex;
   align-items: center;
 }
-.container {
-}
+
 .site-header-logo-link {
   margin-right: auto;
 }
