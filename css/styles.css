@@ -54,6 +54,8 @@ margin-right: auto;
 display: inline-block;
 text-decoration: none;
 background-color: var(--primary);
+min-width: 260px;
+text-align: center;
 color: #fff;
 padding: 12px 38px;
 font-size: 18px;
@@ -256,8 +258,45 @@ margin: 0;
   box-shadow: 16px 0 0 0 #ddd,
   32px 0 0 0 #ddd
 }
+/* promo  */
+.promo {
+padding-top: 70px;
+padding-bottom: 70px;
+}
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.promo-img {
+  width: 400px;
+  height: 600px;
+object-fit: cover;
+}
+/* runners */
+.runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image:url(../img/runners.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 
+}
+
+.runners-lead-cta {
+  color: #fff;
+  margin-left: auto;
+}
+.lead-cta--white .lead-cta-heading{
+  color: #fff;
+}
+.lead-cta--white .lead-cta-text{
+  border-color:#fff;
+  color: #fff;
+}
 
 /* retina  */
 @media
