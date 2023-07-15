@@ -1,6 +1,7 @@
 :root{
   --primary:#ea625c;
 --text-color:#333;
+--primar-dark:#c9514c;
 
 }
 
@@ -48,6 +49,27 @@ padding-left: 50px;
 padding-right: 50px;
 margin-left: auto;
 margin-right: auto;
+}
+.button{
+display: inline-block;
+text-decoration: none;
+background-color: var(--primary);
+color: #fff;
+padding: 12px 38px;
+font-size: 18px;
+line-height: 1.5;
+text-transform: uppercase;
+font-weight: bold;
+border:  0;
+transition: all 0.15s ease;
+}
+.button:hover{
+  font-size: 18.5px;
+  background-color: var(--primar-dark);
+}
+.button:active{
+  opacity: 0.6;
+  font-size: 17px;
 }
 
 .main-content{
@@ -118,4 +140,57 @@ list-style: none;
   padding-bottom: 6px;
   padding-top: 6px;
   border: none;
+}
+
+/* HERO
+*/
+.hero {
+background-image: url(../img/intro-bg.jpg);
+background-repeat: no-repeat;
+background-position: left calc(50% + 550px) bottom;
+  padding-top:140px;
+  padding-bottom: 180px;
+  border-bottom: 2px solid #ddd;
+
+
+}
+
+/* lead cta  */
+.lead-cta {
+  width: 100%;
+  max-width: 490px;
+
+}
+.lead-cta-heading {
+margin-top: 0;
+margin-bottom: 30px;
+font-style: 50px;
+line-height: 1.2;
+color:var(--text-color);
+}
+.lead-cta-text {
+  padding-left: 37px;
+  border-left: 3px solid #888;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #777;
+
+}
+.button {
+}
+
+
+/* retina  */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+.hero{
+  background-image:url(../img/intro-bg@2x.jpg)
+}
+
 }
